@@ -1,0 +1,13 @@
+<div>
+    <ul>
+        <li *ngFor='let hero of herolist' (click)='onselect(hero)'>
+            <span>{{hero.id}}</span> <span>{{hero.name}}</span>  
+        </li>
+    </ul>
+</div>
+<div *ngIf="selectedhero">
+    <label>name
+    <input [(ngModel)]="selectedhero.name" placeholder="name">{{selectedhero.name}}</label>
+</div>
+<p>Now the hero-detail component</p>
+<app-hero-detail [hero]="selectedhero"></app-hero-detail>

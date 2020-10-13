@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "thero"
+    }
+  },
+  "defaultProject": "thero",
+  "cli": {
+    "analytics": "ca583547-5621-41a5-a05a-cb8cc4c8175d"
+  }
 }
